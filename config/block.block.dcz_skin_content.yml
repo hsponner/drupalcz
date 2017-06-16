@@ -1,8 +1,9 @@
 uuid: c862d4ad-375b-4286-9cfa-fec02a57e821
 langcode: cs
-status: true
+status: false
 dependencies:
   module:
+    - block_visibility_groups
     - system
   theme:
     - dcz_skin
@@ -11,7 +12,7 @@ _core:
 id: dcz_skin_content
 theme: dcz_skin
 region: content
-weight: 0
+weight: -7
 provider: null
 plugin: system_main_block
 settings:
@@ -19,4 +20,14 @@ settings:
   label: 'Main page content'
   provider: system
   label_display: '0'
-visibility: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

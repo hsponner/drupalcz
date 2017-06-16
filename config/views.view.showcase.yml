@@ -178,7 +178,8 @@ display:
     display_title: 'Front page slider block'
     position: 2
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender: {  }
       pager:
         type: some
         options:
@@ -195,8 +196,8 @@ display:
         type: jssor
         options:
           global:
-            autoplay: 1
-            arrownavigator: 0
+            autoplay: 0
+            arrownavigator: 1
             bulletnavigator: 1
           general:
             slide_duration: '500'
@@ -206,22 +207,22 @@ display:
             autoplayinterval: '3000'
             autoplaysteps: '1'
             pauseonhover: '1'
-            transition: transition0101
+            transition: transition0000
           arrownavigator:
             arrowskin: '01'
             autocenter: '2'
-            chancetoshow: '1'
+            chancetoshow: '0'
             steps: '1'
             scale: 1
           bulletnavigator:
-            bulletskin: '14'
-            chancetoshow: '1'
+            bulletskin: '01'
+            chancetoshow: '2'
             action_mode: '1'
-            autocenter: '1'
+            autocenter: '2'
             rows: '1'
             steps: '1'
-            spacingx: '5'
-            spacingy: '5'
+            spacingx: '0'
+            spacingy: '0'
             orientation: '1'
             scale: 0
       row:

@@ -1,28 +1,28 @@
-uuid: d74f8f8e-af8c-47d3-8286-3ae174ed961f
+uuid: f59d531e-1257-4a38-aa68-f0cb08d41730
 langcode: cs
 status: true
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.frontpage
-    - views.view.showcase
   module:
     - block_visibility_groups
-    - views
+    - forum
   theme:
     - dcz_skin
-id: views_block__showcase_block_2
+id: aktivnitemata
 theme: dcz_skin
 region: content
-weight: -4
+weight: -3
 provider: null
-plugin: 'views_block:showcase-block_2'
+plugin: forum_active_block
 settings:
-  id: 'views_block:showcase-block_2'
-  label: ''
-  provider: views
-  label_display: '0'
-  views_label: ''
-  items_per_page: none
+  id: forum_active_block
+  label: 'Aktivní témata'
+  provider: forum
+  label_display: visible
+  properties:
+    administrative: '1'
+  block_count: 5
 visibility:
   condition_group:
     id: condition_group

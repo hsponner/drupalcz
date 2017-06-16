@@ -1,0 +1,17 @@
+uuid: cf82d68d-3770-4b32-9c3b-353648255712
+langcode: cs
+status: true
+dependencies:
+  module:
+    - system
+id: frontpage
+label: frontpage
+logic: and
+conditions:
+  8f32c80d-ee69-424a-9671-2495173a83e5:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+    uuid: 8f32c80d-ee69-424a-9671-2495173a83e5
+allow_other_conditions: true

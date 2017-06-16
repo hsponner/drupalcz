@@ -1,23 +1,23 @@
-uuid: d74f8f8e-af8c-47d3-8286-3ae174ed961f
+uuid: c7feeb11-455c-4fcb-8cbe-8997515553bb
 langcode: cs
 status: true
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.frontpage
-    - views.view.showcase
+    - views.view.content_recent
   module:
     - block_visibility_groups
     - views
   theme:
     - dcz_skin
-id: views_block__showcase_block_2
+id: views_block__content_recent_block_1
 theme: dcz_skin
 region: content
-weight: -4
+weight: -5
 provider: null
-plugin: 'views_block:showcase-block_2'
+plugin: 'views_block:content_recent-block_1'
 settings:
-  id: 'views_block:showcase-block_2'
+  id: 'views_block:content_recent-block_1'
   label: ''
   provider: views
   label_display: '0'

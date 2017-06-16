@@ -16,35 +16,27 @@ dependencies:
   module:
     - ds
     - image
-    - juicebox
-    - link
     - text
     - user
 third_party_settings:
   ds:
     layout:
-      id: ds_1col
-      path: modules/contrib/ds
-      library: ''
+      id: layout_twocol
+      library: layout_discovery/twocol
       disable_css: false
-      settings:
-        wrappers:
-          ds_content: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
+      entity_classes: all_classes
+      settings: {  }
     regions:
-      ds_content:
-        - field_main_screenshot
+      first:
         - node_title
-        - field_drupal_version
+        - links
+        - body
+      second:
+        - field_main_screenshot
     fields:
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 0
         label: hidden
         formatter: default
         settings:
@@ -57,74 +49,31 @@ bundle: dcz_showcase
 mode: stack
 content:
   body:
-    type: text_default
-    weight: 13
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_drupal_version:
-    type: entity_reference_label
+    type: text_trimmed
     weight: 2
     label: hidden
     settings:
-      link: false
+      trim_length: 100
     third_party_settings: {  }
-    region: content
+    region: first
   field_main_screenshot:
-    weight: 0
-    label: hidden
-    settings:
-      image_style: screenshot_small
-      image_link: content
-    third_party_settings: {  }
-    type: image
-    region: content
-  field_other_screenshots:
-    type: juicebox_formatter
-    weight: 9
-    label: above
-    settings:
-      image_style: juicebox_medium
-      thumb_style: juicebox_square_thumb
-      caption_source: ''
-      title_source: ''
-      jlib_galleryWidth: 100%
-      jlib_galleryHeight: 100%
-      jlib_backgroundColor: '#222222'
-      jlib_textColor: 'rgba(255,255,255,1)'
-      jlib_thumbFrameColor: 'rgba(255,255,255,.5)'
-      jlib_showOpenButton: true
-      jlib_showExpandButton: true
-      jlib_showThumbsButton: true
-      jlib_useThumbDots: false
-      jlib_useFullscreenExpand: '0'
-      manual_config: ''
-      custom_parent_classes: ''
-      apply_markup_filter: true
-      linkurl_source: ''
-      linkurl_target: _blank
-      incompatible_file_action: show_icon_and_link
-    third_party_settings: {  }
-    region: content
-  field_url:
     weight: 3
     label: hidden
     settings:
-      trim_length: null
-      url_only: false
-      url_plain: false
-      rel: '0'
-      target: '0'
+      image_style: screenshot_small
+      image_link: ''
     third_party_settings: {  }
-    type: link_separate
-    region: content
+    type: image
+    region: second
   links:
-    weight: 10
+    weight: 1
+    region: first
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_display_options: true
+  field_drupal_version: true
   field_logo: true
+  field_other_screenshots: true
+  field_url: true
   langcode: true
