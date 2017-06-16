@@ -1,0 +1,24 @@
+uuid: 7c5a1afd-73e5-4f13-83ee-aa302d29dd1a
+langcode: cs
+status: true
+dependencies:
+  config:
+    - views.view.blog_tags
+  module:
+    - views
+  theme:
+    - dcz_skin
+id: views_block__blog_tags_block_1
+theme: dcz_skin
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:blog_tags-block_1'
+settings:
+  id: 'views_block:blog_tags-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

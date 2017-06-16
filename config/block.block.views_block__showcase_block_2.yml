@@ -1,0 +1,24 @@
+uuid: d74f8f8e-af8c-47d3-8286-3ae174ed961f
+langcode: cs
+status: true
+dependencies:
+  config:
+    - views.view.showcase
+  module:
+    - views
+  theme:
+    - dcz_skin
+id: views_block__showcase_block_2
+theme: dcz_skin
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:showcase-block_2'
+settings:
+  id: 'views_block:showcase-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

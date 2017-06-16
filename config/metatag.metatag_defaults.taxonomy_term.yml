@@ -1,0 +1,11 @@
+uuid: db27fd04-a066-4933-9361-4f96f3a88299
+langcode: cs
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9sz1xUdRmwGeN6seByZJmRsrBtfVECpdzoKGBa2MwXk
+id: taxonomy_term
+label: 'Taxonomy term'
+tags:
+  title: '[term:name] | [site:name]'
+  description: '[term:description]'

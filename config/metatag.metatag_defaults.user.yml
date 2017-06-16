@@ -1,0 +1,11 @@
+uuid: f28d3fcb-bbfc-4f2e-b567-bd7d6501d428
+langcode: cs
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JONk1mhmB2Bpji-kyLf3JBBVro-w1dBtN2CuxmvEimU
+id: user
+label: User
+tags:
+  title: '[user:name] | [site:name]'
+  description: '[site:name]'

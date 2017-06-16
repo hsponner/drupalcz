@@ -1,0 +1,24 @@
+uuid: 3677138d-b3a7-4a14-90d6-44d25a10a3f8
+langcode: cs
+status: true
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - views
+  theme:
+    - dcz_skin
+id: views_block__blog_block_1
+theme: dcz_skin
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:blog-block_1'
+settings:
+  id: 'views_block:blog-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }
